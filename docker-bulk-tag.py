@@ -12,7 +12,7 @@ def tag_image(docker_client, image_id, repository, tags):
 
 # Docker client initialization
 docker_client = docker.from_env()
-
+"""
 def format_numbers(input_string):
     numbers = input_string.strip().split('\n')
     string_array = [str(num) for num in numbers]
@@ -21,14 +21,14 @@ def format_numbers(input_string):
 input_string = input("Enter the numbers (separated by new lines):\n")
 numbers = format_numbers(input_string)
 print(numbers)
-
+"""
 
 
 # Example usage
 image_id = "deaba7fe0b87"
 repository = "kevins311/single_schema_test1"
-tags=numbers
-"""tags = [  '8.5-200-08',
+#tags=numbers
+tags = [  '8.5-200-08',
     '8.5-200-09',
     '8.5-200-10',
     '8.5-214-01',
@@ -40,9 +40,10 @@ tags=numbers
     '8.5-239-01',
     '8.5-239.1651231664-01',
     '8.6-754-01',
-    '8.6-754.1655117782-01'
+    '8.6-754.1655117782-01',
+    '8.0.01'
 ]
-"""
+
 
 tag_image(docker_client, image_id, repository, tags)
 
